@@ -1,0 +1,232 @@
+# 001 = Banco do Brasil
+
+identificacaoRegistro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default: '7'
+
+zeros01:
+  pos: [2, 17]
+  picture: '9(16)'
+  default: 0
+
+prefixAgencia:
+  pos: [18, 21]
+  picture: '9(04)'
+
+agenciaCobradoraDac:
+  pos: [22, 22]
+  picture: '9(01)'
+
+conta:
+  pos: [23, 30]
+  picture: '9(08)'
+
+docDaconta:
+  pos: [31, 31]
+  picture: 'X(01)'
+
+convenio:
+  pos: [32, 38]
+  picture: '9(07)'
+
+controleParticipante:
+  pos: [39, 63]
+  picture: 'X(25)'
+
+nossoNumero:
+  pos: [64, 80]
+  picture: '9(17)'
+
+tipoCobranca:
+  #Nota 2
+  pos: [81, 81]
+  picture: '9(01)'
+
+tipoCobrancaEspecifico:
+  #Nota 3
+  pos: [82, 82]
+  picture: '9(01)'
+
+diasCalculo:
+  #Nota 4
+  pos: [83, 86]
+  picture: '9(04)'
+
+naturezaRecebimento:
+  #Nota 5
+  pos: [87, 88]
+  picture: '9(02)'
+
+prefixTitulo:
+  #Nota 6
+  pos: [89, 91]
+  picture: 'X(03)'
+
+variacaoCarteira:
+  pos: [92, 94]
+  picture: '9(03)'
+
+contaCaucao:
+  #Nota 6
+  pos: [95, 95]
+  picture: '9(01)'
+
+taxaDesconto:
+  pos: [96, 100]
+  picture: '9(05)'
+
+taxaIof:
+  pos: [101, 105]
+  picture: '9(05)'
+
+branco:
+  pos: [106, 106]
+  picture: '9(1)'
+  default: ''
+
+carteira:
+  pos: [107, 108]
+  picture: '9(2)'
+
+comando:
+  # Nota 07
+  pos: [109, 110]
+  picture: '9(02)'
+
+dataLiquidacao:
+  pos: [111, 116]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+
+numTitulo:
+  pos: [117, 126]
+  picture: '9(10)'
+
+brancos:
+  pos: [127, 146]
+  picture: '9(06)'
+  default: ''
+
+dataVencimento:
+  # Nota 06
+  pos: [147, 152]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+
+valorTitulo:
+  pos: [153, 165]
+  picture: '9(11)V9(2)'
+
+codBancoReceb:
+  # Nota 08
+  pos: [166, 168]
+  picture: '9(03)'
+
+prefixAgenReceb:
+  # Nota 08
+  pos: [169, 172]
+  picture: '9(04)'
+
+dvPrefizReceb:
+  pos: [173, 173]
+  picture: 'X(01)'
+
+especie:
+  # Nota 09
+  pos: [174, 175]
+  picture: '9(02)'
+
+dataCredito:
+  # Nota 10
+  pos: [176, 181]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+
+valorTarifa:
+  # Nota 06
+  pos: [182, 188]
+  picture: '9(05)V9(2)'
+
+valorOutrasDespesas:
+  pos: [189, 201]
+  picture: '9(11)V9(2)'
+
+valorJurosDesconto:
+  pos: [202, 214]
+  picture: '9(11)V9(2)'
+
+iofDesconto:
+  pos: [215, 227]
+  picture: '9(11)V9(2)'
+
+valorAbatimento:
+  pos: [228, 240]
+  picture: '9(11)V9(2)'
+
+descontoConcedido:
+  pos: [241, 253]
+  picture: '9(11)V9(2)'
+
+valorRecebido:
+  pos: [254, 266]
+  picture: '9(11)V9(2)'
+
+valorJuros:
+  pos: [267, 279]
+  picture: '9(11)V9(2)'
+
+valorOutrosCreditos:
+  # Nota 26
+  pos: [280, 292]
+  picture: '9(11)V9(2)'
+
+valorAbatimentoNaoAproveitado:
+  pos: [293, 305]
+  picture: '9(11)V9(2)'
+
+valorLancamento:
+  pos: [306, 318]
+  picture: '9(11)V9(2)'
+
+indicativoDebitoCredito:
+  #Nota 11
+  pos: [319, 319]
+  picture: '9(01)'
+
+indicadorValor:
+  #Nota 12
+  pos: [320, 320]
+  picture: '9(01)'
+
+valorAjuste:
+  pos: [321, 332]
+  picture: '9(10)V9(2)'
+
+brancos02:
+  pos: [333, 333]
+  picture: 'X(1)'
+  default: ''
+
+zeros03:
+  pos: [334, 390]
+  picture: '9(57)'
+  default: 0
+
+indicativoAutorizacaoLiquidacaoParcial:
+  pos: [391, 391]
+  picture: '9(01)'
+
+brancos03:
+  pos: [392, 392]
+  picture: 'X(01)'
+  default: ''
+
+codigoLiquidacao:
+  #Nota 15 - Meio Pelo Qual O Título Foi Liquidado
+  pos: [393, 394]
+  picture: '9(02)'
+
+sequencialRegistro:
+  pos: [395, 400]
+  picture: '9(06)'

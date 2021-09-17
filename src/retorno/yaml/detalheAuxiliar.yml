@@ -1,0 +1,194 @@
+# 001 = Banco do Brasil
+
+identificacaoRegistro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default: '2'
+
+nossoNumero:
+  pos: [2, 18]
+  picture: '9(17)'
+
+bancoCredito:
+  pos: [19, 21]
+  picture: '9(03)'
+
+camCompensacao:
+  pos: [22, 24]
+  picture: '9(03)'
+
+prefixAgenCred:
+  pos: [25, 28]
+  picture: '9(04)'
+
+dvAgenCred:
+  pos: [29, 29]
+  picture: '9(01)'
+
+contaCred:
+  pos: [30, 40]
+  picture: '9(11)'
+
+dvContaCred:
+  pos: [41, 41]
+  picture: '9(01)'
+
+nomeFavorecido:
+  pos: [42, 71]
+  picture: 'X(30)'
+
+ValInfoPartilha:
+  pos: [72, 84]
+  picture: '9(11)V9(2)'
+
+valEfetPartilhado:
+  pos: [85, 97]
+  picture: '9(11)V9(2)'
+
+bancoCred:
+  pos: [98, 100]
+  picture: '9(03)'
+
+camConpensacao:
+  pos: [101, 103]
+  picture: '9(03)'
+
+prefixAgenCred:
+  pos: [104, 107]
+  picture: '9(04)'
+
+dvPrefixAgenCred:
+  pos: [108, 108]
+  picture: '9(01)'
+
+contaCred:
+  pos: [109, 119]
+  picture: '9(11)'
+
+dvContaCred:
+  pos: [120, 120]
+  picture: '9(01)'
+
+nomeFavorecido:
+  pos: [121, 150]
+  picture: '9(30)'
+
+valInfoPartilha:
+  pos: [151, 163]
+  picture: '9(11)V9(2)'
+
+valEfetPartilha:
+  pos: [164, 176]
+  picture: '9(11)V9(2)'
+
+bancoCred:
+  pos: [117, 179]
+  picture: '9(03)'
+
+camCompensacao:
+  pos: [180, 182]
+  picture: '9(03)'
+
+prefixAgenCred:
+  pos: [183, 186]
+  picture: '9(04)'
+
+dvPrefixAgenCred:
+  pos: [187, 17]
+  picture: '9(01)'
+
+contaCred:
+  pos: [188, 198]
+  picture: '9(11)'
+
+dvContaCred:
+  pos: [199, 199]
+  picture: '9(01)'
+
+nomeFavorecido:
+  pos: [200, 229]
+  picture: '9(30)'
+
+valInfoPartilha:
+  pos: [230, 242]
+  picture: '9(11)V9(2)'
+
+valEfetPartilhado:
+  pos: [243, 255]
+  picture: '9(11)V9(2)'
+
+bancoCred:
+  pos: [256, 258]
+  picture: '9(03)'
+
+camConpensacao:
+  pos: [259, 261]
+  picture: '9(03)'
+
+prefixAgenCred:
+  pos: [262, 265]
+  picture: '9(04)'
+
+dvPrefixAgenCred:
+  pos: [266, 266]
+  picture: '9(01)'
+
+contaCred:
+  pos: [267, 277]
+  picture: '9(11)'
+
+dvContaCred:
+  pos: [278, 278]
+  picture: '9(01)'
+
+nomeFavorecido:
+  pos: [279, 308]
+  picture: '9(30)'
+
+valInfoPartilha:
+  pos: [309, 321]
+  picture: '9(11)V9(2)'
+
+valEfetPartilhado:
+  pos: [322, 334]
+  picture: '9(11)V9(2)'
+
+tipoDocFavor01:
+  # Nota 16
+  pos: [335, 335]
+  picture: '9(01)'
+
+numDocFavor01:
+  pos: [336, 349]
+  picture: '9(14)'
+
+tipoDocFavor02:
+  # Nota 16
+  pos: [350, 350]
+  picture: '9(01)'
+
+numDocFavor02:
+  pos: [351, 364]
+  picture: '9(14)'
+
+tipoDocFavor03:
+  # Nota 16
+  pos: [365, 365]
+  picture: '9(01)'
+
+numDocFavor03:
+  pos: [366, 379]
+  picture: '9(14)'
+
+tipoDocFavor04:
+  # Nota 16
+  pos: [380, 380]
+  picture: '9(01)'
+
+numDocFavor04:
+  pos: [381, 394]
+  picture: '9(14)'
+
+sequencial:
+  pos: [395, 400]
+  picture: '9(06)'

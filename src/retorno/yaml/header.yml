@@ -1,0 +1,89 @@
+# 001 = Banco do Brasil
+
+identificacaoRegistro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default: '0'
+
+tipoOperacao:
+  pos: [2, 2]
+  picture: '9(01)'
+  default: '2'
+
+identificacaoTipoOperacao:
+  pos: [3, 9]
+  picture: 'X(07)'
+  default: 'RETORNO'
+
+identificacaoTipoServico:
+  pos: [10, 11]
+  picture: '9(02)'
+  default: '01'
+
+identificacaoExtensoServ:
+  pos: [12, 19]
+  picture: 'X(08)'
+  default: 'COBRANCA'
+
+complementoReg:
+  pos: [20, 26]
+  picture: 'X(07)'
+  default: 'Brancos'
+
+prefixAgencia:
+  pos: [27, 30]
+  picture: '9(04)'
+
+dvAgencia:
+  pos: [31, 31]
+  picture: '9(04)'
+  default: 0
+
+numContaCorrent:
+  pos: [32, 39]
+  picture: '9(08)'
+
+dvContaCorrent:
+  pos: [40, 40]
+  picture: 'X(01)'
+
+zeros:
+  pos: [41, 46]
+  picture: '9(06)'
+  default: 0
+
+nomeCedente:
+  pos: [47, 76]
+  picture: 'X(30)'
+
+banco:
+  pos: [77, 94]
+  picture: 'X(18)'
+  default: '001BANCODOBRASIL'
+
+dataGeracao:
+  pos: [95, 100]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+
+sequRetorno:
+  pos: [101, 107]
+  picture: '9(07)'
+
+complementoRegistro:
+  pos: [108, 149]
+  picture: 'X(42)'
+  default: 'Brancos'
+
+numConvenio:
+  pos: [150, 156]
+  picture: '9(07)'
+
+complementoRegistro:
+  pos: [157, 394]
+  picture: 'X(238)'
+  default: 'Brancos'
+
+sequRegistro:
+  pos: [395, 400]
+  picture: '9(06)'

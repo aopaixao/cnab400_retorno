@@ -1,0 +1,140 @@
+# 001 = Banco do Brasil
+
+identificacaoRegistro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default: '3'
+
+nossoNumero:
+  pos: [2, 12]
+  picture: '9(11)'
+
+dvNossoNumero:
+  pos: [13, 13]
+  picture: '9(01)'
+
+numOperacao:
+  pos: [14, 22]
+  picture: '9(09)'
+
+dataOperacao:
+  pos: [23, 30]
+  picture: '9(08)'
+  date_format: '%d%m%y%y'
+
+taxaJurosVendedor:
+  pos: [31, 35]
+  picture: '9(02)V9(3)'
+
+taxaJurosComprador:
+  pos: [36, 40]
+  picture: '9(02)V9(3)'
+
+valTituloVencimento:
+  pos: [41, 55]
+  picture: '9(13)V9(2)'
+
+valOriginal:
+  pos: [56, 70]
+  picture: '9(13)V9(2)'
+
+valEncargos:
+  pos: [71, 85]
+  picture: '9(13)V9(2)'
+
+valIofFianc:
+  pos: [86, 100]
+  picture: '9(13)V9(2)'
+
+valAcumulado:
+  pos: [101, 115]
+  picture: '9(13)V9(2)'
+
+indicEpocEqualiz:
+  # Nota 17
+  pos: [116, 116]
+  picture: '9(01)'
+
+indicNatuEqualiz:
+  # Nota 18
+  pos: [117, 117]
+  picture: '9(01)'
+
+valEqualiz:
+  pos: [118, 132]
+  picture: '9(13)V9(2)'
+
+valJurosProrrog:
+  pos: [133, 147]
+  picture: '9(13)V9(2)'
+
+valIofProrrog:
+  pos: [148, 162]
+  picture: '9(13)V9(2)'
+
+valIofPeriAtraso:
+  pos: [163, 177]
+  picture: '9(13)V9(2)'
+
+nomeComprador:
+  pos: [178, 214]
+  picture: 'X(37)'
+
+codDocComprador:
+  # Nota 19
+  pos: [215, 215]
+  picture: '9(01)'
+
+numDocComprador:
+  pos: [216, 229]
+  picture: '9(14)'
+
+converCnab400:
+  # Nota 20
+  pos: [230, 231]
+  picture: '9(02)'
+
+nossoNumeroPos17:
+  pos: [232, 248]
+  picture: 'X(17)'
+
+novoValTitulo:
+  pos: [249, 263]
+  picture: '9(13)V9(2)'
+
+valEqualizEstornada:
+  pos: [264, 278]
+  picture: '9(13)V9(2)'
+
+valNovaEqualiz:
+  pos: [279, 293]
+  picture: '9(13)V9(2)'
+
+valDifEqualiz:
+  pos: [294, 308]
+  picture: '9(13)V9(2)'
+
+indicCredDeb:
+  pos: [309, 309]
+  picture: '9(01)'
+
+indicNaturEqualizCamp25:
+  pos: [310, 310]
+  picture: '9(01)'
+
+indicNaturEqualizCamp26:
+  pos: [311, 311]
+  picture: '9(01)'
+
+valIofNaoFinanc:
+  pos: [312, 326]
+  picture: '9(13)V9(2)'
+
+valComPermanencia:
+  pos: [327, 341]
+  picture: '9(13)V9(2)'
+
+brancos:
+  pos: [342, 400]
+  picture: 'X(59)'
+  default: ''

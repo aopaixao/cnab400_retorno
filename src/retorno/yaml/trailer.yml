@@ -1,0 +1,105 @@
+# 001 = Banco do Brasil
+
+identificacaoRegistroTrailer:
+  pos: [1, 1]
+  picture: '9(01)'
+
+valFixo01:
+  pos: [2, 2]
+  picture: '9(01)'
+
+valFixo02:
+  pos: [3, 4]
+  picture: '9(02)'
+
+valFixo03:
+  pos: [5, 7]
+  picture: '9(03)'
+
+brancos01:
+  pos: [8, 17]
+  picture: 'X(10)'
+
+qtdedeTitulos:
+  pos: [18, 25]
+  picture: '9(08)'
+
+valorTotal:
+  pos: [26, 39]
+  picture: '9(13)V9(2)'
+
+avisoBancario:
+  pos: [40, 47]
+  picture: 'X(08)'
+
+brancos02:
+  pos: [48, 57]
+  picture: 'X(10)'
+
+qtdedeTitulosDup:
+  pos: [58, 65]
+  picture: '9(08)'
+
+valorTotalDup:
+  pos: [66, 79]
+  picture: '9(13)V9(2)'
+
+avisoBancarioDup:
+  pos: [80, 87]
+  picture: 'X(08)'
+
+brancos03:
+  pos: [88, 97]
+  picture: 'X(10)'
+
+qtdedeTitulosDup2:
+  pos: [98, 105]
+  picture: '9(08)'
+
+valorTotalDup2:
+  pos: [106, 119]
+  picture: '9(13)V9(2)'
+
+avisoBancarioDup2:
+  pos: [120, 127]
+  picture: 'X(08)'
+
+brancos04:
+  pos: [128, 137]
+  picture: 'X(10)'
+
+qtdedeTitulosDup3:
+  pos: [138, 145]
+  picture: '9(08)'
+
+valorTotalDup3:
+  pos: [146, 159]
+  picture: '9(13)V9(2)'
+
+avisoBancarioDup3:
+  pos: [160, 167]
+  picture: 'X(08)'
+
+brancos05:
+  pos: [168, 217]
+  picture: 'X(50)'
+
+qtdede_titulos_dup4:
+  pos: [218, 225]
+  picture: '9(08)'
+
+valorTotalDup4:
+  pos: [226, 239]
+  picture: '9(13)V9(2)'
+
+avisoBancarioDup4:
+  pos: [240, 247]
+  picture: 'X(08)'
+
+brancos06:
+  pos: [248, 394]
+  picture: 'X(147)'
+
+SequencialRegustro:
+  pos: [395, 400]
+  picture: '9(006)'

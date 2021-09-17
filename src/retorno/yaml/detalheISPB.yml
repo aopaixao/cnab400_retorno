@@ -1,0 +1,177 @@
+# 001 = Banco do Brasil
+
+identificacaoRegistro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default: '5'
+
+tipoServico:
+  pos: [2, 3]
+  picture: '9(02)'
+  default: '04'
+
+nossoNumero:
+  pos: [4, 20]
+  picture: '9(17)'
+
+bancoCred:
+  pos: [21, 23]
+  picture: '9(03)'
+
+camCompensacao:
+  pos: [24, 26]
+  picture: '9(03)'
+
+codIspb:
+  # Nota 25
+  pos: [27, 34]
+  picture: '9(09)'
+
+prefixAgenCred:
+  pos: [35, 39]
+  picture: '9(05)'
+
+dvAgenCred:
+  pos: [40, 40]
+  picture: '9(01)'
+
+contaCred:
+  pos: [41, 51]
+  picture: '9(11)'
+
+dvContaCred:
+  pos: [52, 52]
+  picture: '9(01)'
+
+nomeFavorecido:
+  pos: [53, 82]
+  picture: 'X(30)'
+
+valPartilha:
+  pos: [83, 95]
+  picture: '9(11)V9(2)'
+
+brancos:
+  pos: [96, 108]
+  picture: 'X(13)'
+  default: ''
+
+bancoCred:
+  pos: [109, 112]
+  picture: '9(03)'
+
+camCompensacao:
+  pos: [112, 114]
+  picture: '9(03)'
+
+codIspb:
+  # Nota 25
+  pos: [115, 122]
+  picture: '9(09)'
+
+prefixAgenCred:
+  pos: [123, 127]
+  picture: '9(05)'
+
+dvAgenCred:
+  pos: [128, 128]
+  picture: '9(01)'
+
+contaCred:
+  pos: [129, 139]
+  picture: '9(11)'
+
+dvContaCred:
+  pos: [140, 140]
+  picture: '9(01)'
+
+nomeFavorecido:
+  pos: [141, 170]
+  picture: 'X(30)'
+
+valPartilha:
+  pos: [171, 183]
+  picture: '9(11)V9(2)'
+
+brancos:
+  pos: [184, 196]
+  picture: 'X(13)'
+  default: ''
+
+bancoCred:
+  pos: [197, 199]
+  picture: '9(03)'
+
+camCompensacao:
+  pos: [200, 202]
+  picture: '9(03)'
+
+codIspb:
+  # Nota 25
+  pos: [203, 210]
+  picture: '9(09)'
+
+prefixAgenCred:
+  pos: [211, 215]
+  picture: '9(05)'
+
+dvAgenCred:
+  pos: [216, 216]
+  picture: '9(01)'
+
+contaCred:
+  pos: [217, 227]
+  picture: '9(11)'
+
+dvContaCred:
+  pos: [228, 228]
+  picture: '9(01)'
+
+nomeFavorecido:
+  pos: [229, 258]
+  picture: 'X(30)'
+
+valPartilha:
+  pos: [259, 271]
+  picture: '9(11)V9(2)'
+
+brancos:
+  pos: [272, 284]
+  picture: 'X(13)'
+  default: ''
+
+tipoDocFavor01:
+  # Nota 16
+  pos: [285, 285]
+  picture: '9(01)'
+
+numDocFavor01:
+  pos: [286, 299]
+  picture: '9(14)'
+
+tipoDocFavor02:
+  # Nota 16
+  pos: [300, 300]
+  picture: '9(01)'
+
+numDocFavor02:
+  pos: [301, 314]
+  picture: '9(14)'
+
+tipoDocFavor03:
+  # Nota 16
+  pos: [315, 315]
+  picture: '9(01)'
+
+numDocFavor03:
+  pos: [316, 329]
+  picture: '9(14)'
+
+brancos:
+  # Nota 16
+  pos: [330, 394]
+  picture: '9(65)'
+
+sequencial:
+  pos: [395, 400]
+  picture: '9(06)'
