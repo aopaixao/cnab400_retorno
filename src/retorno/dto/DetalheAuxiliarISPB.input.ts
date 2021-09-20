@@ -1,83 +1,105 @@
 import { Field, InputType } from "@nestjs/graphql";
+import { IsOptional } from "class-validator";
 
 @InputType()
 export class DetalheAuxiliarISPB{
 
     // 5
+    @IsOptional()
     @Field(() => String)
-    identificacaoRegistroDetalhe: string;
+    identificacaoRegistroDetalhe?: string;
 
     // 04
+    @IsOptional()
     @Field(() => String)
-    tipoServico: string;
+    tipoServico?: string;
 
+    @IsOptional()
     @Field(() => String)
-    nossoNumero: string;
-
-    // 3x
-    @Field(() => String)
-    bancoCred: string;
+    nossoNumero?: string;
 
     // 3x
+    @IsOptional()
     @Field(() => String)
-    camaraCompensacao: string;
+    bancoCred?: string;
+
+    // 3x
+    @IsOptional()
+    @Field(() => String)
+    camaraCompensacao?: string;
 
     // 3x "Ver nota explicativa"
+    @IsOptional()
     @Field(() => String)
-    codigoISPB: string;
+    codigoISPB?: string;
 
     // 3x
+    @IsOptional()
     @Field(() => String)
-    prefixAgenCred: string;
+    prefixAgenCred?: string;
 
     // 3x
+    @IsOptional()
     @Field(() => String)
-    dvAgenCred: string;
+    dvAgenCred?: string;
 
     // 3x
+    @IsOptional()
     @Field(() => String)
-    contaCred: string;
+    contaCred?: string;
 
     // 3x
+    @IsOptional()
     @Field(() => String)
-    dvContaCred: string;
+    dvContaCred?: string;
 
     // 3x
+    @IsOptional()
     @Field(() => String)
-    nomeFavorecido: string;
+    nomeFavorecido?: string;
 
     // 3x
+    @IsOptional()
     @Field(() => String)
-    valorPartilha: string;
+    valorPartilha?: string;
 
     // 3x
+    @IsOptional()
     @Field(() => String)
-    brancos01: string;
+    brancos01?: string;
 
     // ver nota explicativa
+    @IsOptional()
     @Field(() => String)
-    tipoDocFavorecido01: string;
+    tipoDocFavorecido01?: string;
 
+    @IsOptional()
     @Field(() => String)
-    numDocFavorecido01: string;
-
-    // ver nota explicativa
-    @Field(() => String)
-    tipoDocFavorecido02: string;
-
-    @Field(() => String)
-    numDocFavorecido02: string;
+    numDocFavorecido01?: string;
 
     // ver nota explicativa
+    @IsOptional()
     @Field(() => String)
-    tipoDocFavorecido03: string;
+    tipoDocFavorecido02?: string;
 
+    @IsOptional()
     @Field(() => String)
-    numDocFavorecido03: string;
+    numDocFavorecido02?: string;
 
+    // ver nota explicativa
+    @IsOptional()
     @Field(() => String)
-    brancos: string;
+    tipoDocFavorecido03?: string;
 
+    @IsOptional()
     @Field(() => String)
-    sequencial: string;
+    numDocFavorecido03?: string;
+
+    @IsOptional()
+    @Field(() => String)
+    brancos?: string;
+
+    @IsOptional()
+    @Field(() => String)
+    sequencial?: string;
 }

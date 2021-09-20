@@ -1,56 +1,73 @@
 import { Field, InputType } from "@nestjs/graphql";
+import { IsOptional } from "class-validator";
 
 @InputType()
 export class DetalheChequeInput{
     // "5"
+    @IsOptional()
     @Field(() => String)
-    identificacaoRegistroTransacao: string;
+    identificacaoRegistroTransacao?: string;
 
     // "04"
+    @IsOptional()
     @Field(() => String)
-    tipoServico: string;
+    tipoServico?: string;
 
+    @IsOptional()
     @Field(() => String)
-    zeros01: string;
+    zeros01?: string;
 
+    @IsOptional()
     @Field(() => String)
-    nossoNumero: string;
+    nossoNumero?: string;
 
     // "DDMMAAAA"
+    @IsOptional()
     @Field(() => String)
-    dataPagamento: string;
+    dataPagamento?: string;
 
+    @IsOptional()
     @Field(() => String)
-    zeros02: string;
+    zeros02?: string;
 
+    @IsOptional()
     @Field(() => String)
-    valorCheque: string;
+    valorCheque?: string;
 
+    @IsOptional()
     @Field(() => String)
-    prazoBloqCheque: string;
+    prazoBloqCheque?: string;
 
+    @IsOptional()
     @Field(() => String)
-    zeros03: string;
+    zeros03?: string;
 
+    @IsOptional()
     @Field(() => String)
-    motivoDevolucao: string;
+    motivoDevolucao?: string;
 
+    @IsOptional()
     @Field(() => String)
-    brancos01: string;
+    brancos01?: string;
 
+    @IsOptional()
     @Field(() => String)
-    trilhaCheque: string;
+    trilhaCheque?: string;
 
     // "Ver nota explicativa"
+    @IsOptional()
     @Field(() => String)
-    tipoCaptura: string;
+    tipoCaptura?: string;
 
+    @IsOptional()
     @Field(() => String)
-    zeros04: string;
+    zeros04?: string;
 
+    @IsOptional()
     @Field(() => String)
-    brancos02: string;
+    brancos02?: string;
 
+    @IsOptional()
     @Field(() => String)
-    sequencialRegistro: string;
+    sequencialRegistro?: string;
 }

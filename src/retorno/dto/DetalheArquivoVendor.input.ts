@@ -1,113 +1,148 @@
 import { Field, InputType } from "@nestjs/graphql";
+import { IsOptional } from "class-validator";
 
 @InputType()
 export class DetalheArquivoVendor{
     // 3
+    @IsOptional()
     @Field(() => String)
-    identificacaoRegistroDetalhe: string;
+    identificacaoRegistroDetalhe?: string;
 
+    @IsOptional()
     @Field(() => String)
-    nossoNumero: string;
+    nossoNumero?: string;
 
+    @IsOptional()
     @Field(() => String)
-    dvNossoNumero: string;
+    dvNossoNumero?: string;
 
+    @IsOptional()
     @Field(() => String)
-    numOperacaoVendor: string;
+    numOperacaoVendor?: string;
 
     // DDMMAAAA
+    @IsOptional()
     @Field(() => String)
-    dataOperacaoVendor: string;
+    dataOperacaoVendor?: string;
 
     // ver nota explicativa
+    @IsOptional()
     @Field(() => String)
-    taxaJurosVendor: string;
+    taxaJurosVendor?: string;
 
+    @IsOptional()
     @Field(() => String)
-    taxaJurosComprador: string;
+    taxaJurosComprador?: string;
 
+    @IsOptional()
     @Field(() => String)
-    vencimentoBoleto: string;
+    vencimentoBoleto?: string;
 
+    @IsOptional()
     @Field(() => String)
-    valorOrigVenda: string;
+    valorOrigVenda?: string;
 
+    @IsOptional()
     @Field(() => String)
-    valorEncargos: string;
+    valorEncargos?: string;
 
+    @IsOptional()
     @Field(() => String)
-    valorIOFFinan: string;
+    valorIofFinan?: string;
 
+    @IsOptional()
     @Field(() => String)
-    valAcumAbatimento: string;
-
-    // ver nota explicativa
-    @Field(() => String)
-    indicEpocaEqualiz: string;
-
-    // ver nota explicativa
-    @Field(() => String)
-    indicNaturezaEqualiz: string;
-
-    @Field(() => String)
-    valorEqualiz: string;
-
-    @Field(() => String)
-    valJurosProrrog: string;
-
-    @Field(() => String)
-    valIOFProrrog: string;
-
-    @Field(() => String)
-    valIOFPeriodoAtraso: string;
-
-    @Field(() => String)
-    nomeComprador: string;
+    valAcumAbatimento?: string;
 
     // ver nota explicativa
+    @IsOptional()
     @Field(() => String)
-    codDocComprador: string;
-
-    @Field(() => String)
-    numDocComprador: string;
+    indicEpocaEqualiz?: string;
 
     // ver nota explicativa
+    @IsOptional()
     @Field(() => String)
-    conversaoCnab240: string;
+    indicNaturezaEqualiz?: string;
 
+    @IsOptional()
     @Field(() => String)
-    nossoNumeroPosicao17: string;
+    valorEqualiz?: string;
 
+    @IsOptional()
     @Field(() => String)
-    novoValBoleto: string;
+    valJurosProrrog?: string;
 
+    @IsOptional()
     @Field(() => String)
-    valEqualizEstornada: string;
+    valIOFProrrog?: string;
 
+    @IsOptional()
     @Field(() => String)
-    valNovaEqualiz: string;
+    valIOFPeriodoAtraso?: string;
 
+    @IsOptional()
     @Field(() => String)
-    valDiferencaEqualiz: string;
-
-    // ver nota explicativa
-    @Field(() => String)
-    indicativoDebCred: string;
-
-    // ver nota explicativa
-    @Field(() => String)
-    indicNaturezaEqualiz02: string;
+    nomeComprador?: string;
 
     // ver nota explicativa
+    @IsOptional()
     @Field(() => String)
-    indicNaturezaEqualiz03: string;
+    codDocComprador?: string;
 
+    @IsOptional()
     @Field(() => String)
-    valIOFNFinanciado: string;
+    numDocComprador?: string;
 
+    // ver nota explicativa
+    @IsOptional()
     @Field(() => String)
-    valComiPermanencia: string;
+    conversaoCnab240?: string;
 
+    // nosso número posição 17
+    @IsOptional()
     @Field(() => String)
-    Brancos: string;
+    nossoNumeroPosicao?: string;
+
+    @IsOptional()
+    @Field(() => String)
+    novoValBoleto?: string;
+
+    @IsOptional()
+    @Field(() => String)
+    valEqualizEstornada?: string;
+
+    @IsOptional()
+    @Field(() => String)
+    valNovaEqualiz?: string;
+
+    @IsOptional()
+    @Field(() => String)
+    valDiferencaEqualiz?: string;
+
+    // ver nota explicativa
+    @IsOptional()
+    @Field(() => String)
+    indicativoDebCred?: string;
+
+    // ver nota explicativa
+    @IsOptional()
+    @Field(() => String)
+    indicNaturezaEqualiz02?: string;
+
+    // ver nota explicativa
+    @IsOptional()
+    @Field(() => String)
+    indicNaturezaEqualiz03?: string;
+
+    @IsOptional()
+    @Field(() => String)
+    valIOFNFinanciado?: string;
+
+    @IsOptional()
+    @Field(() => String)
+    valComiPermanencia?: string;
+
+    @IsOptional()
+    @Field(() => String)
+    Brancos?: string;
 }
