@@ -51,7 +51,7 @@ valPartilha:
   pos: [83, 95]
   picture: '9(11)V9(2)'
 
-brancos:
+brancos01:
   pos: [96, 108]
   picture: 'X(13)'
   default: ''
@@ -93,7 +93,7 @@ valPartilha:
   pos: [171, 183]
   picture: '9(11)V9(2)'
 
-brancos:
+brancos02:
   pos: [184, 196]
   picture: 'X(13)'
   default: ''
@@ -135,7 +135,7 @@ valPartilha:
   pos: [259, 271]
   picture: '9(11)V9(2)'
 
-brancos:
+brancos03:
   pos: [272, 284]
   picture: 'X(13)'
   default: ''
@@ -167,7 +167,7 @@ numDocFavor03:
   pos: [316, 329]
   picture: '9(14)'
 
-brancos:
+brancos04:
   # Nota 16
   pos: [330, 394]
   picture: '9(65)'

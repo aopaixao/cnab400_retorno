@@ -1,0 +1,32 @@
+# 001 = Banco do Brasil
+
+# Nota 23
+identificacaoRegistro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default: '5'
+
+#Número do boleto do cedente com 15 posições
+tipoServico:
+  pos: [2, 3]
+  picture: '9(02)'
+  default: '06'
+
+zeros:
+  pos: [4, 5]
+  picture: '9(02)'
+  default: 0
+
+#Número do boleto do cedente com 15 posições
+numBoletoCed:
+  pos: [6, 20]
+  picture: 'X(15)'
+
+complementoRegistro:
+  pos: [21, 394]
+  picture: 'X(374)'
+  default: ''
+
+numSequencialRegistro:
+  pos: [395, 400]
+  picture: '9(06)'

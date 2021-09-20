@@ -1,0 +1,29 @@
+# 001 = Banco do Brasil
+
+identificacaoRegistro:
+  pos: [1, 1]
+  picture: 'X(01)'
+  default: '5'
+
+tipoServico:
+  pos: [2, 3]
+  picture: '9(02)'
+  default: '01'
+
+zeros:
+  pos: [4, 5]
+  picture: '9(02)'
+  default: 0
+
+emailRemessa:
+  pos: [6, 142]
+  picture: 'X(135)'
+
+brancos:
+  pos: [143, 394]
+  picture: 'X(252)'
+  default: ''
+
+sequencialRegistro:
+  pos: [395, 400]
+  picture: 'X(06)'

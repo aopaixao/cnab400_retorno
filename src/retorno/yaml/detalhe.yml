@@ -58,7 +58,7 @@ naturezaRecebimento:
   pos: [87, 88]
   picture: '9(02)'
 
-prefixTitulo:
+prefixBoleto:
   #Nota 6
   pos: [89, 91]
   picture: 'X(03)'
@@ -99,7 +99,7 @@ dataLiquidacao:
   picture: '9(06)'
   date_format: '%d%m%y'
 
-numTitulo:
+numBoleto:
   pos: [117, 126]
   picture: '9(10)'
 
@@ -114,7 +114,7 @@ dataVencimento:
   picture: '9(06)'
   date_format: '%d%m%y'
 
-valorTitulo:
+valorBoleto:
   pos: [153, 165]
   picture: '9(11)V9(2)'
 

@@ -20,7 +20,7 @@ numOperacao:
 dataOperacao:
   pos: [23, 30]
   picture: '9(08)'
-  date_format: '%d%m%y%y'
+  date_format: '%d%m%y'
 
 taxaJurosVendedor:
   pos: [31, 35]
@@ -30,7 +30,7 @@ taxaJurosComprador:
   pos: [36, 40]
   picture: '9(02)V9(3)'
 
-valTituloVencimento:
+valBoletoVencimento:
   pos: [41, 55]
   picture: '9(13)V9(2)'
 
@@ -98,7 +98,7 @@ nossoNumeroPos17:
   pos: [232, 248]
   picture: 'X(17)'
 
-novoValTitulo:
+novoValBoleto:
   pos: [249, 263]
   picture: '9(13)V9(2)'
 

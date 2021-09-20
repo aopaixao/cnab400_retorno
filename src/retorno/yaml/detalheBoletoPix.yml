@@ -1,0 +1,39 @@
+# 001 = Banco do Brasil
+
+identificacaoRegistro:
+  pos: [1, 1]
+  picture: 'X(01)'
+  default: '5'
+
+tipoServico:
+  pos: [2, 3]
+  picture: '9(02)'
+  default: '10'
+
+zeros:
+  pos: [4, 5]
+  picture: '9(02)'
+  default: 0
+
+brancos01:
+  pos: [6, 140]
+  picture: '9(135)'
+  default: ''
+
+ulrQrCodeChave:
+  pos: [141, 217]
+  picture: 'X(77)'
+
+#Identificacao do QR Code
+txid:
+  pos: [218, 252]
+  picture: 'X(35)'
+
+brancos02:
+  pos: [253, 394]
+  picture: 'X(142)'
+  default: ''
+
+sequencialRegistro:
+  pos: [395, 400]
+  picture: 'X(06)'

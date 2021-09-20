@@ -28,7 +28,7 @@ identificacaoExtensoServ:
 complementoReg:
   pos: [20, 26]
   picture: 'X(07)'
-  default: 'Brancos'
+  default: ''
 
 prefixAgencia:
   pos: [27, 30]
@@ -37,7 +37,6 @@ prefixAgencia:
 dvAgencia:
   pos: [31, 31]
   picture: '9(04)'
-  default: 0
 
 numContaCorrent:
   pos: [32, 39]
@@ -66,7 +65,8 @@ dataGeracao:
   picture: '9(06)'
   date_format: '%d%m%y'
 
-sequRetorno:
+sequencialRetorno:
+# Nota 01
   pos: [101, 107]
   picture: '9(07)'
 
@@ -84,6 +84,6 @@ complementoRegistro:
   picture: 'X(238)'
   default: 'Brancos'
 
-sequRegistro:
+sequencialRegistro:
   pos: [395, 400]
   picture: '9(06)'

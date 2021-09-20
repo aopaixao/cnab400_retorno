@@ -1,0 +1,76 @@
+# 001 = Banco do Brasil
+
+identificacaoRegistro:
+  pos: [1, 1]
+  picture: 'X(01)'
+  default: '5'
+
+tipoServico:
+  pos: [2, 3]
+  picture: '9(02)'
+  default: '04'
+
+zeros01:
+  pos: [4, 5]
+  picture: '9(02)'
+  default: 0
+
+nossoNumero:
+  pos: [6, 22]
+  picture: '9(17)'
+
+#DDMMAAAA
+dataPagamento:
+  pos: [23, 30]
+  picture: '9(08)'
+  date_format: '%d%m%y'
+
+zeros02:
+  pos: [31, 44]
+  picture: '9(14)'
+  default: 0
+
+valCheque:
+  pos: [45, 59]
+  picture: '9(13)V9(2)'
+
+prazoBloqCred:
+  pos: [60, 62]
+  picture: '9(03)'
+
+zeros03:
+  pos: [63, 65]
+  picture: '9(03)'
+  default: 0
+
+devolCheque:
+  pos: [66, 68]
+  picture: '9(03)'
+
+brancos01:
+  pos: [69, 69]
+  picture: 'X(01)'
+  default: ''
+
+trilhaCheque:
+  pos: [70, 103]
+  picture: 'X(34)'
+
+# Nota 21
+tipoCaptura:
+  pos: [104, 104]
+  picture: 'X(01)'
+
+zeros04:
+  pos: [105, 115]
+  picture: '9(11)'
+  default: 0
+
+brancos02:
+  pos: [116, 394]
+  picture: 'X(252)'
+  default: ''
+
+sequencialRegistro:
+  pos: [395, 400]
+  picture: '9(06)'

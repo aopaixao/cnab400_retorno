@@ -94,7 +94,7 @@ prefixAgenCred:
   picture: '9(04)'
 
 dvPrefixAgenCred:
-  pos: [187, 17]
+  pos: [187, 187]
   picture: '9(01)'
 
 contaCred:

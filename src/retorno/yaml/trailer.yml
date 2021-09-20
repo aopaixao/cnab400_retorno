@@ -3,24 +3,31 @@
 identificacaoRegistroTrailer:
   pos: [1, 1]
   picture: '9(01)'
+  default: '9'
 
 valFixo01:
   pos: [2, 2]
   picture: '9(01)'
+  default: '2'
 
 valFixo02:
   pos: [3, 4]
   picture: '9(02)'
+  default: '01'
 
 valFixo03:
   pos: [5, 7]
   picture: '9(03)'
+  default: '001'
 
 brancos01:
   pos: [8, 17]
   picture: 'X(10)'
+  default: ''
 
-qtdedeTitulos:
+# COMBRANÇA SIMPLES
+
+qtdedeBoletos:
   pos: [18, 25]
   picture: '9(08)'
 
@@ -35,8 +42,11 @@ avisoBancario:
 brancos02:
   pos: [48, 57]
   picture: 'X(10)'
+  default: ''
 
-qtdedeTitulosDup:
+# COBRANÇA VINCULADA 
+
+qtdedeBoletosDup:
   pos: [58, 65]
   picture: '9(08)'
 
@@ -51,8 +61,11 @@ avisoBancarioDup:
 brancos03:
   pos: [88, 97]
   picture: 'X(10)'
+  default: ''
 
-qtdedeTitulosDup2:
+# COBRANÇA CAUCIONADA
+
+qtdedeBoletosDup2:
   pos: [98, 105]
   picture: '9(08)'
 
@@ -68,7 +81,9 @@ brancos04:
   pos: [128, 137]
   picture: 'X(10)'
 
-qtdedeTitulosDup3:
+# COBRANÇA DESCONTADA
+
+qtdedeBoletosDup3:
   pos: [138, 145]
   picture: '9(08)'
 
@@ -83,8 +98,11 @@ avisoBancarioDup3:
 brancos05:
   pos: [168, 217]
   picture: 'X(50)'
+  default: ''
 
-qtdede_titulos_dup4:
+# COBRANÇA VENDOR
+
+qtdeDeBoletosDup4:
   pos: [218, 225]
   picture: '9(08)'
 
@@ -99,6 +117,7 @@ avisoBancarioDup4:
 brancos06:
   pos: [248, 394]
   picture: 'X(147)'
+  default: ''
 
 SequencialRegustro:
   pos: [395, 400]
