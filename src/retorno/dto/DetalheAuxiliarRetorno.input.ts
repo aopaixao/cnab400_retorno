@@ -2,7 +2,7 @@ import { Field, InputType } from "@nestjs/graphql";
 import { IsOptional } from "class-validator";
 
 @InputType()
-export class DetalheAuxiliarInpitut{
+export class DetalheAuxiliarRetornoInput{
 
     // 2
     @IsOptional()

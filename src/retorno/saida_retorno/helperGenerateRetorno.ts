@@ -1,5 +1,7 @@
 // tslint:disable:variable-name
 
+// modificar de acordo com o que for recebido via service
+
 import { generateRetornoCnab } from './retorno'
 import { isCNPJ, isCPF } from 'brazilian-values'
 import dayjs from 'dayjs'
@@ -29,7 +31,7 @@ export function helperGenerateRetornoCNAB400(dadosGeracao: any, bankCode: any) {
     numeroSequencial++
     let sacadoCodigoInscricao = 99
 
-    if (isCPF(detalheSegmento.sacado_numeroInscricao)) sacadoCodigoInscricao = 1
+    if (isCPF(detalheSegmento.sacadoNumeroInscricao)) sacadoCodigoInscricao = 1
     if (isCNPJ(detalheSegmento.sacadoNumeroInscricao)) sacadoCodigoInscricao = 2
 
     const detalhe = {
@@ -61,7 +63,7 @@ export function helperGenerateRetornoCNAB400(dadosGeracao: any, bankCode: any) {
    */
   numeroSequencial++
   const trailerArquivo = {
-    valor_total: sumBy(dadosGeracao.detalhe_segmento, (Row: any) => Number(Row.valorTitulo)),
+    valorTotal: sumBy(dadosGeracao.detalheSegmento, (Row: any) => Number(Row.valorTitulo)),
     numeroSequencial: Number(numeroSequencial)
   }
 
