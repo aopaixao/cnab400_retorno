@@ -1,6 +1,6 @@
 import { Field, InputType } from "@nestjs/graphql";
 import { IsOptional } from "class-validator";
-import { BancoInput } from "./banco.input";
+import { BancoInput } from "./Banco.input";
 import { DetalheArquivoVendor } from "./DetalheArquivoVendor.input";
 import { DetalheAuxiliarISPB } from "./DetalheAuxiliarISPB.input";
 import { DetalheAuxiliarRetornoInput } from "./DetalheAuxiliarRetorno.input";

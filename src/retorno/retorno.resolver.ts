@@ -1,4 +1,4 @@
-import { Args, Mutation, Resolver } from '@nestjs/graphql';
+import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { FileLayoutInput } from './dto/FileLayout.input';
 import { RetornoService } from './retorno.service';
 
@@ -8,6 +8,10 @@ export class RetornoResolver {
         private readonly retornoService : RetornoService,
       ) {}
     
+      @Query(() => String)
+      helloWorld(): String {
+        return "Hello World";
+      }
 
       @Mutation(() => String)
       generateCnab400(@Args({ name: 'fileLayoutInput', type: () => FileLayoutInput}) fileLayoutInput : FileLayoutInput) : Promise<String>{
