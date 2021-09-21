@@ -27,32 +27,32 @@ export class FileLayoutInput{
     @Field(() => BancoInput)
     bancoInput : BancoInput;
     
-    @IsOptional()
-    @Field(() => DetalheArquivoVendor)
-    detalheArquivoVendor ?: DetalheArquivoVendor;
+    // @IsOptional()
+    // @Field(() => DetalheArquivoVendor)
+    // detalheArquivoVendor ?: DetalheArquivoVendor;
 
-    @IsOptional()
-    @Field(() => DetalheAuxiliarISPB)
-    detalheAuxiliarISPB ?: DetalheAuxiliarISPB;
+    // @IsOptional()
+    // @Field(() => DetalheAuxiliarISPB)
+    // detalheAuxiliarISPB ?: DetalheAuxiliarISPB;
 
-    @IsOptional()
-    @Field(() => DetalheAuxiliarRetornoInput)
-    detalheAuxiliarRetorno ?: DetalheAuxiliarRetornoInput;
+    // @IsOptional()
+    // @Field(() => DetalheAuxiliarRetornoInput)
+    // detalheAuxiliarRetorno ?: DetalheAuxiliarRetornoInput;
 
-    @IsOptional()
-    @Field(() => DetalheBloquetoInput)
-    detalheBloquetoEmail ?: DetalheBloquetoInput;
+    // @IsOptional()
+    // @Field(() => DetalheBloquetoInput)
+    // detalheBloquetoEmail ?: DetalheBloquetoInput;
 
-    @IsOptional()
-    @Field(() => DetalheBoletoPixInput)
-    detalheBoletoPix ?: DetalheBoletoPixInput;
+    // @IsOptional()
+    // @Field(() => DetalheBoletoPixInput)
+    // detalheBoletoPix ?: DetalheBoletoPixInput;
 
-    @IsOptional()
-    @Field(() => DetalheChequeInput)
-    detalheCheque ?: DetalheChequeInput;
+    // @IsOptional()
+    // @Field(() => DetalheChequeInput)
+    // detalheCheque ?: DetalheChequeInput;
 
-    @IsOptional()
-    @Field(() => DetalheOpcionalBoletoInput)
-    detalheOpcionalBoleto ?: DetalheOpcionalBoletoInput;
+    // @IsOptional()
+    // @Field(() => DetalheOpcionalBoletoInput)
+    // detalheOpcionalBoleto ?: DetalheOpcionalBoletoInput;
 
 }

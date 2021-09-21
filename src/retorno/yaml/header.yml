@@ -25,7 +25,7 @@ identificacaoExtensoServ:
   picture: 'X(08)'
   default: 'COBRANCA'
 
-complementoReg:
+complementoRegistro01:
   pos: [20, 26]
   picture: 'X(07)'
   default: ''
@@ -70,19 +70,19 @@ sequencialRetorno:
   pos: [101, 107]
   picture: '9(07)'
 
-complementoRegistro:
+complementoRegistro02:
   pos: [108, 149]
   picture: 'X(42)'
-  default: 'Brancos'
+  default: ''
 
 numConvenio:
   pos: [150, 156]
   picture: '9(07)'
 
-complementoRegistro:
+complementoRegistro03:
   pos: [157, 394]
   picture: 'X(238)'
-  default: 'Brancos'
+  default: ''
 
 sequencialRegistro:
   pos: [395, 400]

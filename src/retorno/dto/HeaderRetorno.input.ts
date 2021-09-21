@@ -1,31 +1,38 @@
 import { Field, InputType } from "@nestjs/graphql";
+import { IsOptional } from "class-validator";
 
 @InputType()
 export class HeaderRetornoInput{
 
     // "0"
+    @IsOptional()
     @Field(() => String)
-    identificacaoRegistro: string;
+    identificacaoRegistro?: string = '0';
 
     // "2"
+    @IsOptional()
     @Field(() => String)
-    tipoOperacao: string;
+    tipoOperacao?: string = '2';
 
     // "Retorno"
+    @IsOptional()
     @Field(() => String)
-    identificacaoOperacao: string;
+    identificacaoOperacao?: string = 'RETORNO';
 
     // "01"
+    @IsOptional()
     @Field(() => String)
-    tipoServico: string;
+    tipoServico?: string = '01';
 
     // "COBRANCA"
+    @IsOptional()
     @Field(() => String)
-    extensoTipoServico: string;
+    extensoTipoServico?: string = 'COBRANCA';
 
     // "Brancos"
+    @IsOptional()
     @Field(() => String)
-    complementoResgistro: string;
+    complementoRegistro01?: string = '        ';
 
     @Field(() => String)
     numeroAgencia: string;
@@ -39,14 +46,16 @@ export class HeaderRetornoInput{
     @Field(() => String)
     dvCedente: string;
 
+    @IsOptional()
     @Field(() => String)
-    zeros01: string;
+    zeros01?: string = '      ';
 
     @Field(() => String)
     nomeCedente: string;
 
+    @IsOptional()
     @Field(() => String)
-    banco01: string = "001BANCODOBRASIL";
+    banco01?: string = '001BRANCODOBRASIL';
 
     // "DDMMAA"
     @Field(() => String)
@@ -55,15 +64,18 @@ export class HeaderRetornoInput{
     @Field(() => String)
     sequencialRetorno: string;
 
+    @IsOptional()
     @Field(() => String)
-    complementoRegistro: string;
+    complementoRegistro02?: string = ' ';
 
     @Field(() => String)
     numeroConvenio: string;
 
+    @IsOptional()
     @Field(() => String)
-    complementoRegistro2: string;
+    complementoRegistro03?: string = ' ';
 
-    @Field(() => String)
-    sequencialRegistro: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // sequencialRegistro?: string;
 }

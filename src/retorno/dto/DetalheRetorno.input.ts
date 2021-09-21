@@ -1,17 +1,17 @@
 import { Field, InputType } from "@nestjs/graphql";
+import { IsOptional } from "class-validator";
 
 @InputType()
 export class DetalheRetornoInput{
 
     // 7
+    @IsOptional()
     @Field(() => String)
-    identificacaoRegistro: string;
+    identificacaoRegistro?: string = '7';
 
+    @IsOptional()
     @Field(() => String)
-    zeros01: string;
-
-    @Field(() => String)
-    zeros02: string;
+    zeros01?: string = '0';
 
     @Field(() => String)
     prefixoAgencia: string;
@@ -68,8 +68,9 @@ export class DetalheRetornoInput{
     @Field(() => String)
     taxaIOF: string;
 
+    @IsOptional()
     @Field(() => String)
-    branco01: string;
+    branco01?: string = '';
 
     @Field(() => String)
     carteira: string;
@@ -85,8 +86,9 @@ export class DetalheRetornoInput{
     @Field(() => String)
     numeroBoleto: string;
 
+    @IsOptional()
     @Field(() => String)
-    brancos01: string;
+    brancos01?: string = '';
 
      // "Ver nota explicativa"
     @Field(() => String)
@@ -162,52 +164,28 @@ export class DetalheRetornoInput{
     valorAjuste: string;
 
     // "Ver nota explicativa"
+    @IsOptional()
     @Field(() => String)
-    Brancos02: string;
+    Brancos02?: string = '';
 
     // "Ver nota explicativa"
+    @IsOptional()
     @Field(() => String)
-    Brancos03: string;
-
-    // "Ver nota explicativa"
-    @Field(() => String)
-    zeros03: string;
-
-    // "Ver nota explicativa"
-    @Field(() => String)
-    zeros04: string;
-
-    // "Ver nota explicativa"
-    @Field(() => String)
-    zeros05: string;
-
-    // "Ver nota explicativa"
-    @Field(() => String)
-    zeros06: string;
-
-    // "Ver nota explicativa"
-    @Field(() => String)
-    zeros07: string;
-
-    // "Ver nota explicativa"
-    @Field(() => String)
-    zeros08: string;
-
-    // "Ver nota explicativa"
-    @Field(() => String)
-    zeros09: string;
+    zeros03?: string = '0';
 
     // "Ver nota explicativa"
     @Field(() => String)
     indicativoLiqParcial: string;
 
+    @IsOptional()
     @Field(() => String)
-    branco02: string;
+    branco02?: string = '';
 
     // "Ver nota explicativa"
     @Field(() => String)
     canalPagamento: string;
 
-    @Field(() => String)
-    sequencialRegistro: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // sequencialRegistro?: string;
 }

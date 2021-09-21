@@ -1,22 +1,28 @@
 import { Field, InputType } from "@nestjs/graphql";
+import { IsOptional } from "class-validator";
 
 @InputType()
 export class TrailerArquivoInput{
     // "9"
+    @IsOptional()
     @Field(() => String)
-    identificacaoRegistroTrailer: string;
+    identificacaoRegistroTrailer?: string = '9';
 
+    @IsOptional()
     @Field(() => String)
-    valFixo01: string = "2";
+    valFixo01?: string = '2';
 
+    @IsOptional()
     @Field(() => String)
-    valFixo02: string = "01";
+    valFixo02?: string = '01';
 
+    @IsOptional()
     @Field(() => String)
-    valFixo03: string = "001";
+    valFixo03?: string = '001';
 
+    @IsOptional()
     @Field(() => String)
-    brancos01: string;
+    brancos01?: string = '';
 
     // COBRANÇA SIMPLES
 
@@ -29,65 +35,83 @@ export class TrailerArquivoInput{
     @Field(() => String)
     numAviso01: string;
 
+    @IsOptional()
     @Field(() => String)
-    brancos02: string;
+    brancos02?: string = '';
 
     // COBRANÇA VINCULADA
 
-    @Field(() => String)
-    quantBoletos02: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // quantBoletos02?: string;
 
-    @Field(() => String)
-    valorTotal02: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // valorTotal02?: string;
 
-    @Field(() => String)
-    numAviso02: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // numAviso02?: string;
 
-    @Field(() => String)
-    brancos03: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // brancos03?: string;
 
     // COBRANÇA CAUCIONADA
 
-    @Field(() => String)
-    quantBoletos03: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // quantBoletos03?: string;
 
-    @Field(() => String)
-    valorTotal03: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // valorTotal03?: string;
 
-    @Field(() => String)
-    numAviso03: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // numAviso03?: string;
 
-    @Field(() => String)
-    brancos04: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // brancos04?: string;
 
     // COBRANÇA DESCONTADA
 
-    @Field(() => String)
-    quantBoletos04: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // quantBoletos04?: string;
 
-    @Field(() => String)
-    valorTotal04: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // valorTotal04?: string;
 
-    @Field(() => String)
-    numAviso04: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // numAviso04?: string;
 
-    @Field(() => String)
-    brancos05: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // brancos05?: string;
 
     // COBRANÇA VENDOR
 
-    @Field(() => String)
-    quantBoletos05: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // quantBoletos05?: string;
 
-    @Field(() => String)
-    valorTotal05: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // valorTotal05?: string;
 
-    @Field(() => String)
-    numAviso05: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // numAviso05?: string;
 
-    @Field(() => String)
-    brancos06: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // brancos06?: string;
 
-    @Field(() => String)
-    sequencialRegistro: string;
+    // @IsOptional()
+    // @Field(() => String)
+    // sequencialRegistro?: string;
 }

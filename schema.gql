@@ -15,41 +15,32 @@ input FileLayoutInput {
   detalheRetornoInput: DetalheRetornoInput!
   trailerRetornoInput: TrailerArquivoInput!
   bancoInput: BancoInput!
-  detalheArquivoVendor: DetalheArquivoVendor!
-  detalheAuxiliarISPB: DetalheAuxiliarISPB!
-  detalheAuxiliarRetorno: DetalheAuxiliarRetornoInput!
-  detalheBloquetoEmail: DetalheBloquetoInput!
-  detalheBoletoPix: DetalheBoletoPixInput!
-  detalheCheque: DetalheChequeInput!
-  detalheOpcionalBoleto: DetalheOpcionalBoletoInput!
 }
 
 input HeaderRetornoInput {
-  identificacaoRegistro: String!
-  tipoOperacao: String!
-  identificacaoOperacao: String!
-  tipoServico: String!
-  extensoTipoServico: String!
-  complementoResgistro: String!
+  identificacaoRegistro: String = "0"
+  tipoOperacao: String = "2"
+  identificacaoOperacao: String = "RETORNO"
+  tipoServico: String = "01"
+  extensoTipoServico: String = "COBRANCA"
+  complementoRegistro01: String = "        "
   numeroAgencia: String!
   dvAgencia: String!
   conta: String!
   dvCedente: String!
-  zeros01: String!
+  zeros01: String = "      "
   nomeCedente: String!
-  banco01: String = "001BANCODOBRASIL"
+  banco01: String = "001BRANCODOBRASIL"
   dataGravacao: String!
   sequencialRetorno: String!
-  complementoRegistro: String!
+  complementoRegistro02: String = " "
   numeroConvenio: String!
-  complementoRegistro2: String!
-  sequencialRegistro: String!
+  complementoRegistro03: String = " "
 }
 
 input DetalheRetornoInput {
-  identificacaoRegistro: String!
-  zeros01: String!
-  zeros02: String!
+  identificacaoRegistro: String = "7"
+  zeros01: String = "0"
   prefixoAgencia: String!
   dvAgencia: String!
   conta: String!
@@ -66,12 +57,12 @@ input DetalheRetornoInput {
   contaCaucao: String!
   taxaDesconto: String!
   taxaIOF: String!
-  branco01: String!
+  branco01: String = ""
   carteira: String!
   comando: String!
   dataLiquidacao: String!
   numeroBoleto: String!
-  brancos01: String!
+  brancos01: String = ""
   dataVencimento: String!
   valorBoleto: String!
   codigoBancoRecebedor: String!
@@ -93,185 +84,26 @@ input DetalheRetornoInput {
   indicativoDebCred: String!
   indicadorValor: String!
   valorAjuste: String!
-  Brancos02: String!
-  Brancos03: String!
-  zeros03: String!
-  zeros04: String!
-  zeros05: String!
-  zeros06: String!
-  zeros07: String!
-  zeros08: String!
-  zeros09: String!
+  Brancos02: String = ""
+  zeros03: String = "0"
   indicativoLiqParcial: String!
-  branco02: String!
+  branco02: String = ""
   canalPagamento: String!
-  sequencialRegistro: String!
 }
 
 input TrailerArquivoInput {
-  identificacaoRegistroTrailer: String!
+  identificacaoRegistroTrailer: String = "9"
   valFixo01: String = "2"
   valFixo02: String = "01"
   valFixo03: String = "001"
-  brancos01: String!
+  brancos01: String = ""
   quantBoletos01: String!
   valorTotal01: String!
   numAviso01: String!
-  brancos02: String!
-  quantBoletos02: String!
-  valorTotal02: String!
-  numAviso02: String!
-  brancos03: String!
-  quantBoletos03: String!
-  valorTotal03: String!
-  numAviso03: String!
-  brancos04: String!
-  quantBoletos04: String!
-  valorTotal04: String!
-  numAviso04: String!
-  brancos05: String!
-  quantBoletos05: String!
-  valorTotal05: String!
-  numAviso05: String!
-  brancos06: String!
-  sequencialRegistro: String!
+  brancos02: String = ""
 }
 
 input BancoInput {
   bankCode: String!
   cnabCode: Float!
-}
-
-input DetalheArquivoVendor {
-  identificacaoRegistroDetalhe: String!
-  nossoNumero: String!
-  dvNossoNumero: String!
-  numOperacaoVendor: String!
-  dataOperacaoVendor: String!
-  taxaJurosVendor: String!
-  taxaJurosComprador: String!
-  vencimentoBoleto: String!
-  valorOrigVenda: String!
-  valorEncargos: String!
-  valorIofFinan: String!
-  valAcumAbatimento: String!
-  indicEpocaEqualiz: String!
-  indicNaturezaEqualiz: String!
-  valorEqualiz: String!
-  valJurosProrrog: String!
-  valIOFProrrog: String!
-  valIOFPeriodoAtraso: String!
-  nomeComprador: String!
-  codDocComprador: String!
-  numDocComprador: String!
-  conversaoCnab240: String!
-  nossoNumeroPosicao: String!
-  novoValBoleto: String!
-  valEqualizEstornada: String!
-  valNovaEqualiz: String!
-  valDiferencaEqualiz: String!
-  indicativoDebCred: String!
-  indicNaturezaEqualiz02: String!
-  indicNaturezaEqualiz03: String!
-  valIOFNFinanciado: String!
-  valComiPermanencia: String!
-  Brancos: String!
-}
-
-input DetalheAuxiliarISPB {
-  identificacaoRegistroDetalhe: String!
-  tipoServico: String!
-  nossoNumero: String!
-  bancoCred: String!
-  camaraCompensacao: String!
-  codigoISPB: String!
-  prefixAgenCred: String!
-  dvAgenCred: String!
-  contaCred: String!
-  dvContaCred: String!
-  nomeFavorecido: String!
-  valorPartilha: String!
-  brancos01: String!
-  tipoDocFavorecido01: String!
-  numDocFavorecido01: String!
-  tipoDocFavorecido02: String!
-  numDocFavorecido02: String!
-  tipoDocFavorecido03: String!
-  numDocFavorecido03: String!
-  brancos: String!
-  sequencial: String!
-}
-
-input DetalheAuxiliarRetornoInput {
-  identificacaoRegistro: String!
-  nossoNumero: String!
-  bancoCredito: String!
-  camaraCompensacao: String!
-  prefixoAgenCred: String!
-  dvAgenCred: String!
-  contaCredito: String!
-  dvContaCred: String!
-  nomeFavorecido: String!
-  valorPartilha: String!
-  valorPartilhado: String!
-  bancoCred: String!
-  prefixAgenCred: String!
-  dvPrefixAgenCred: String!
-  tipoDocFavorecido01: String!
-  numDocFavorecido01: String!
-  tipoDocFavorecido02: String!
-  numDocFavorecido02: String!
-  tipoDocFavorecido03: String!
-  numDocFavorecido03: String!
-  tipoDocFavorecido04: String!
-  numDocFavorecido04: String!
-  sequencial: String!
-}
-
-input DetalheBloquetoInput {
-  identificacaoRegistroTransacao: String!
-  tipoServico: String!
-  zeros: String!
-  emailRemessa: String!
-  brancos: String!
-  sequencialRegistro: String!
-}
-
-input DetalheBoletoPixInput {
-  identificacaoRegistroTransacao: String!
-  tipoServico: String!
-  zeros: String!
-  brancos01: String!
-  url: String!
-  txid: String!
-  brancos02: String!
-  sequencialRegistro: String!
-}
-
-input DetalheChequeInput {
-  identificacaoRegistroTransacao: String!
-  tipoServico: String!
-  zeros01: String!
-  nossoNumero: String!
-  dataPagamento: String!
-  zeros02: String!
-  valorCheque: String!
-  prazoBloqCheque: String!
-  zeros03: String!
-  motivoDevolucao: String!
-  brancos01: String!
-  trilhaCheque: String!
-  tipoCaptura: String!
-  zeros04: String!
-  brancos02: String!
-  sequencialRegistro: String!
-}
-
-input DetalheOpcionalBoletoInput {
-  identificacaoRegistroTransacao: String!
-  tiposServico: String!
-  zeros01: String!
-  numeroBoleto: String!
-  complementoRegistro: String!
-  numSequenRegArquivo: String!
 }

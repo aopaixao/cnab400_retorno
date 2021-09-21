@@ -12,7 +12,7 @@ export class RetornoService {
               identificacaoOperacao: fileLayoutInput.headerRetornoInput.identificacaoOperacao,
               tipoServico: fileLayoutInput.headerRetornoInput.tipoServico,
               extensoTipoServico: fileLayoutInput.headerRetornoInput.extensoTipoServico,
-              complementoResgistro: fileLayoutInput.headerRetornoInput.complementoRegistro,
+              complementoResgistro: fileLayoutInput.headerRetornoInput.complementoRegistro01,
               numeroAgencia: fileLayoutInput.headerRetornoInput.numeroAgencia,
               dvAgencia: fileLayoutInput.headerRetornoInput.dvAgencia,
               conta: fileLayoutInput.headerRetornoInput.conta,
@@ -22,15 +22,13 @@ export class RetornoService {
               banco01: fileLayoutInput.headerRetornoInput.banco01,
               dataGravacao: fileLayoutInput.headerRetornoInput.dataGravacao,
               sequencialRetorno: fileLayoutInput.headerRetornoInput.sequencialRetorno,
-              complementoRegistro : fileLayoutInput.headerRetornoInput.complementoRegistro,
+              complementoRegistro : fileLayoutInput.headerRetornoInput.complementoRegistro02,
               numeroConvenio: fileLayoutInput.headerRetornoInput.numeroConvenio,
-              complementoRegistro2: fileLayoutInput.headerRetornoInput.complementoRegistro2,
-              sequencialRegistro: fileLayoutInput.headerRetornoInput.sequencialRegistro
+              complementoRegistro2: fileLayoutInput.headerRetornoInput.complementoRegistro03,
             },
             detalhe: {
               identificacaoRegistro: fileLayoutInput.detalheRetornoInput.identificacaoRegistro,
               zeros01: fileLayoutInput.detalheRetornoInput.zeros01,
-              zeros02: fileLayoutInput.detalheRetornoInput.zeros02,
               prefixoAgencia: fileLayoutInput.detalheRetornoInput.prefixoAgencia,
               dvAgencia: fileLayoutInput.detalheRetornoInput.dvAgencia,
               conta: fileLayoutInput.detalheRetornoInput.conta,
@@ -75,18 +73,10 @@ export class RetornoService {
               indicadorValor: fileLayoutInput.detalheRetornoInput.indicadorValor,
               valorAjuste: fileLayoutInput.detalheRetornoInput.valorAjuste,
               Brancos02: fileLayoutInput.detalheRetornoInput.Brancos02,
-              Brancos03: fileLayoutInput.detalheRetornoInput.Brancos03,
               zeros03: fileLayoutInput.detalheRetornoInput.zeros03,
-              zeros04: fileLayoutInput.detalheRetornoInput.zeros04,
-              zeros05: fileLayoutInput.detalheRetornoInput.zeros05,
-              zeros06: fileLayoutInput.detalheRetornoInput.zeros06,
-              zeros07: fileLayoutInput.detalheRetornoInput.zeros07,
-              zeros08: fileLayoutInput.detalheRetornoInput.zeros08,
-              zeros09: fileLayoutInput.detalheRetornoInput.zeros09,
               indicativoLiqParcial: fileLayoutInput.detalheRetornoInput.indicativoLiqParcial,
               branco02: fileLayoutInput.detalheRetornoInput.branco02,
-              canalPagamento: fileLayoutInput.detalheRetornoInput.canalPagamento,
-              sequencialRegistro: fileLayoutInput.detalheRetornoInput.sequencialRegistro
+              canalPagamento: fileLayoutInput.detalheRetornoInput.canalPagamento
             },
             trailerArquivo: { 
                 identificacaoRegistroTrailer: fileLayoutInput.trailerRetornoInput.identificacaoRegistroTrailer, 
@@ -100,26 +90,26 @@ export class RetornoService {
                 numAviso01: fileLayoutInput.trailerRetornoInput.numAviso01,
                 brancos02: fileLayoutInput.trailerRetornoInput.brancos02,
                 // COBRANÇA VINCULADA
-                quantBoletos02: fileLayoutInput.trailerRetornoInput.quantBoletos02,
-                valorTotal02: fileLayoutInput.trailerRetornoInput.valorTotal02,
-                numAviso02: fileLayoutInput.trailerRetornoInput.numAviso02,
-                brancos03: fileLayoutInput.trailerRetornoInput.brancos03,
+                // quantBoletos02: fileLayoutInput.trailerRetornoInput.quantBoletos02,
+                // valorTotal02: fileLayoutInput.trailerRetornoInput.valorTotal02,
+                // numAviso02: fileLayoutInput.trailerRetornoInput.numAviso02,
+                // brancos03: fileLayoutInput.trailerRetornoInput.brancos03,
                 // COBRANÇA CAUCIONADA
-                quantBoletos03: fileLayoutInput.trailerRetornoInput.quantBoletos03,
-                valorTotal03: fileLayoutInput.trailerRetornoInput.valorTotal03,
-                numAviso03: fileLayoutInput.trailerRetornoInput.numAviso03,
-                brancos04: fileLayoutInput.trailerRetornoInput.brancos04,
+                // quantBoletos03: fileLayoutInput.trailerRetornoInput.quantBoletos03,
+                // valorTotal03: fileLayoutInput.trailerRetornoInput.valorTotal03,
+                // numAviso03: fileLayoutInput.trailerRetornoInput.numAviso03,
+                // brancos04: fileLayoutInput.trailerRetornoInput.brancos04,
                 // COBRANÇA DESCONTADA
-                quantBoletos04: fileLayoutInput.trailerRetornoInput.quantBoletos04,
-                valorTotal04: fileLayoutInput.trailerRetornoInput.valorTotal04,
-                numAviso04: fileLayoutInput.trailerRetornoInput.numAviso04,
-                brancos05: fileLayoutInput.trailerRetornoInput.brancos05,
+                // quantBoletos04: fileLayoutInput.trailerRetornoInput.quantBoletos04,
+                // valorTotal04: fileLayoutInput.trailerRetornoInput.valorTotal04,
+                // numAviso04: fileLayoutInput.trailerRetornoInput.numAviso04,
+                // brancos05: fileLayoutInput.trailerRetornoInput.brancos05,
                 // COBRANÇA VENDOR
-                quantBoletos05: fileLayoutInput.trailerRetornoInput.quantBoletos05,
-                valorTotal05: fileLayoutInput.trailerRetornoInput.valorTotal05,
-                numAviso05: fileLayoutInput.trailerRetornoInput.numAviso05,
-                brancos06: fileLayoutInput.trailerRetornoInput.brancos06,
-                sequencialRegistro: fileLayoutInput.trailerRetornoInput.sequencialRegistro
+                // quantBoletos05: fileLayoutInput.trailerRetornoInput.quantBoletos05,
+                // valorTotal05: fileLayoutInput.trailerRetornoInput.valorTotal05,
+                // numAviso05: fileLayoutInput.trailerRetornoInput.numAviso05,
+                // brancos06: fileLayoutInput.trailerRetornoInput.brancos06,
+                // sequencialRegistro: fileLayoutInput.trailerRetornoInput.sequencialRegistro
             }
           };
           const bankCode = fileLayoutInput.bancoInput.bankCode;

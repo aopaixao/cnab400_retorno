@@ -14,7 +14,7 @@ prefixAgencia:
   pos: [18, 21]
   picture: '9(04)'
 
-agenciaCobradoraDac:
+dvPrefixAgencia:
   pos: [22, 22]
   picture: '9(01)'
 
@@ -22,7 +22,7 @@ conta:
   pos: [23, 30]
   picture: '9(08)'
 
-docDaconta:
+dvConta:
   pos: [31, 31]
   picture: 'X(01)'
 
@@ -80,7 +80,7 @@ taxaIof:
   pos: [101, 105]
   picture: '9(05)'
 
-branco:
+branco01:
   pos: [106, 106]
   picture: '9(1)'
   default: ''
@@ -103,7 +103,7 @@ numBoleto:
   pos: [117, 126]
   picture: '9(10)'
 
-brancos:
+brancos01:
   pos: [127, 146]
   picture: '9(06)'
   default: ''
@@ -204,12 +204,12 @@ valorAjuste:
   picture: '9(10)V9(2)'
 
 brancos02:
-  pos: [333, 333]
-  picture: 'X(1)'
+  pos: [333, 342]
+  picture: 'X(10)'
   default: ''
 
 zeros03:
-  pos: [334, 390]
+  pos: [343, 390]
   picture: '9(57)'
   default: 0
 
@@ -217,12 +217,12 @@ indicativoAutorizacaoLiquidacaoParcial:
   pos: [391, 391]
   picture: '9(01)'
 
-brancos03:
+branco02:
   pos: [392, 392]
   picture: 'X(01)'
   default: ''
 
-codigoLiquidacao:
+canalPagamento:
   #Nota 15 - Meio Pelo Qual O Título Foi Liquidado
   pos: [393, 394]
   picture: '9(02)'

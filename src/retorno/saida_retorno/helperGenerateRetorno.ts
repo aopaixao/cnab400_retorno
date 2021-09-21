@@ -1,6 +1,7 @@
 // tslint:disable:variable-name
 
 // modificar de acordo com o que for recebido via service
+// descobrir se é necessário
 
 import { generateRetornoCnab } from './retorno'
 import { isCNPJ, isCPF } from 'brazilian-values'
