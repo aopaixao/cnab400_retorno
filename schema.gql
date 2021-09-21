@@ -7,12 +7,12 @@ type Query {
 }
 
 type Mutation {
-  generateCnab400(fileLayoutInput: FileLayoutInput!): String!
+  generateCnab400(fileLayoutInput: [FileLayoutInput!]!): String!
 }
 
 input FileLayoutInput {
   headerRetornoInput: HeaderRetornoInput!
-  detalheRetornoInput: DetalheRetornoInput!
+  detalheRetornoInput: [DetalheRetornoInput!]!
   trailerRetornoInput: TrailerArquivoInput!
   bancoInput: BancoInput!
 }

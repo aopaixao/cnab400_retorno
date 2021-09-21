@@ -26,7 +26,8 @@ export class RetornoService {
               numeroConvenio: fileLayoutInput.headerRetornoInput.numeroConvenio,
               complementoRegistro2: fileLayoutInput.headerRetornoInput.complementoRegistro03,
             },
-            detalhe: {
+            detalhe: [
+              {
               identificacaoRegistro: fileLayoutInput.detalheRetornoInput.identificacaoRegistro,
               zeros01: fileLayoutInput.detalheRetornoInput.zeros01,
               prefixoAgencia: fileLayoutInput.detalheRetornoInput.prefixoAgencia,
@@ -77,7 +78,8 @@ export class RetornoService {
               indicativoLiqParcial: fileLayoutInput.detalheRetornoInput.indicativoLiqParcial,
               branco02: fileLayoutInput.detalheRetornoInput.branco02,
               canalPagamento: fileLayoutInput.detalheRetornoInput.canalPagamento
-            },
+            }
+          ],
             trailerArquivo: { 
                 identificacaoRegistroTrailer: fileLayoutInput.trailerRetornoInput.identificacaoRegistroTrailer, 
                 valFixo01: fileLayoutInput.trailerRetornoInput.valFixo01, 

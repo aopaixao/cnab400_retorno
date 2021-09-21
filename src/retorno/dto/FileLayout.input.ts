@@ -18,7 +18,7 @@ export class FileLayoutInput{
     @Field(() => HeaderRetornoInput)
     headerRetornoInput : HeaderRetornoInput;
 
-    @Field(() => DetalheRetornoInput)
+    @Field(() => [DetalheRetornoInput])
     detalheRetornoInput : DetalheRetornoInput;
 
     @Field(() => TrailerArquivoInput)
