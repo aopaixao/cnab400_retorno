@@ -7,7 +7,7 @@ type Query {
 }
 
 type Mutation {
-  generateCnab400(fileLayoutInput: [FileLayoutInput!]!): String!
+  generateCnab400(fileLayoutInput: FileLayoutInput!): String!
 }
 
 input FileLayoutInput {

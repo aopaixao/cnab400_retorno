@@ -14,7 +14,7 @@ export class RetornoResolver {
       }
 
       @Mutation(() => String)
-      generateCnab400(@Args({ name: 'fileLayoutInput', type: () => [FileLayoutInput]}) fileLayoutInput : FileLayoutInput) : Promise<String>{
+      generateCnab400(@Args({ name: 'fileLayoutInput', type: () => FileLayoutInput}) fileLayoutInput : FileLayoutInput) : Promise<String>{
         return this.retornoService.generateCnab400(fileLayoutInput);
       }
 }

@@ -1,0 +1,11 @@
+version: "3"
+
+services: 
+  voltz_cnab400_retorno:
+    build: .
+    command: npm run start:dev
+    ports: 
+      - "3009:3000"
+    volumes: 
+      - .:/opt/docker_files/cnab400_retorno
+      - /opt/docker_files/cnab400_retorno/node_modules
