@@ -31,12 +31,13 @@ export class RetornoService {
         complementoRegistro2: fileLayoutInput.headerRetornoInput.complementoRegistro03,
       };
 
-      returnFileLayout.push({ headerArquivo });
+      //returnFileLayout.push({ headerArquivo });
       
       //Popula o array de detalhes
       const keyName='detalhe';
       const detalheKeyValue: any = [];
       const detalheValues: any = [];
+      const arrayDetalhe: any = [];
 
       fileLayoutInput.detalheRetornoInput.forEach((detalhe_retorno: DetalheRetornoInput) => {
         detalheValues.push({
@@ -93,8 +94,9 @@ export class RetornoService {
        
       })
       detalheKeyValue[keyName] = detalheValues; 
-      const detalhe = detalheKeyValue[keyName];
-      returnFileLayout.push( {detalhe} );
+      let detalhe = detalheKeyValue[keyName];
+      arrayDetalhe.push( detalhe );
+      //returnFileLayout.push( {detalhe} );
 
       //Popula o trailer
       const trailerArquivo: any = { 
@@ -131,11 +133,31 @@ export class RetornoService {
         // sequencialRegistro: fileLayoutInput.trailerRetornoInput.sequencialRegistro
     }
 
-    returnFileLayout.push({ trailerArquivo });
+    //returnFileLayout.push({ trailerArquivo });
+    returnFileLayout.push({headerArquivo , detalhe, trailerArquivo});
 
-    //console.log(JSON.stringify(returnFileLayout));
-    return JSON.stringify(returnFileLayout);
-    
+    // OPCAO1: Interando e imprimindo o próprio array
+    returnFileLayout.forEach(function(key, index){
+      console.log(key.headerArquivo.identificacaoRegistro);
+      console.log(key.trailerArquivo.identificacaoRegistroTrailer);
+    });
+
+    // OPCAO2A: Convertendo o array em String Json e, a seguir, em objeto Javascript
+    let stringJson = JSON.stringify(returnFileLayout);
+    stringJson = stringJson.replace(/\[(.*)\]/,'$1');
+    const objJson = JSON.parse(stringJson);
+
+    //Imprimindo como objeto
+    Object.entries(objJson).forEach(([key, value]) => {
+      console.log(`${key} ${value}`);
+    });
+
+    // OPCAO2b: Transformando o objeto num Map e imprimindo seu conteúdo
+    var map = new Map(Object.entries(objJson));
+    console.log(map);
+
+    return stringJson;    
+
     /**
     const bankCode = fileLayoutInput.bancoInput.bankCode;
     const cnabCode = fileLayoutInput.bancoInput.cnabCode;
